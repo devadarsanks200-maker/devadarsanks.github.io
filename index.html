@@ -8,51 +8,74 @@
 
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
             margin: 0;
-            background: #0f172a;
+            font-family: 'Poppins', sans-serif;
+            background: #0a0f1c;
             color: #e2e8f0;
         }
 
+        /* HERO SECTION */
         header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top, #1e293b, #020617);
             text-align: center;
-            padding: 80px 20px;
+            padding: 20px;
         }
 
         header h1 {
-            font-size: 40px;
+            font-size: 50px;
             margin-bottom: 10px;
         }
 
         .tagline {
             color: #38bdf8;
-            font-weight: 500;
+            font-size: 18px;
         }
 
         .headline {
-            margin-top: 15px;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-top: 15px;
             color: #94a3b8;
         }
 
         .btn {
-            margin-top: 20px;
-            padding: 12px 25px;
+            margin-top: 25px;
+            padding: 12px 30px;
             background: #38bdf8;
-            color: #0f172a;
-            border-radius: 25px;
+            color: #020617;
+            border-radius: 30px;
             text-decoration: none;
-            display: inline-block;
             font-weight: bold;
+            transition: 0.3s;
         }
 
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        /* PROFILE IMAGE */
+        .profile {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 3px solid #38bdf8;
+            object-fit: cover;
+            box-shadow: 0 0 25px rgba(56,189,248,0.6);
+        }
+
+        /* NAV */
         nav {
-            text-align: center;
-            border-top: 1px solid #1e293b;
-            border-bottom: 1px solid #1e293b;
+            position: sticky;
+            top: 0;
+            background: #020617;
             padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #1e293b;
         }
 
         nav a {
@@ -62,7 +85,7 @@
         }
 
         section {
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
 
         .container {
@@ -70,16 +93,18 @@
             margin: auto;
         }
 
+        /* CARDS */
         .card {
             background: #1e293b;
             padding: 25px;
+            border-radius: 12px;
             margin: 20px 0;
-            border-radius: 10px;
             transition: 0.3s;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
         }
 
         .projects {
@@ -94,13 +119,12 @@
             padding: 8px 15px;
             margin: 5px;
             border-radius: 20px;
-            font-size: 14px;
         }
 
+        /* CONTACT */
         .contact-icons img {
-            width: 40px;
+            width: 45px;
             margin: 10px;
-            filter: brightness(0.9);
             transition: 0.3s;
         }
 
@@ -120,8 +144,10 @@
 
 <header>
     <h1>Devadarsan K S</h1>
-    <img src="profile.jpg.jpeg" class="profile">
     <p class="tagline">MBA Student | Marketing & Human Resource Management</p>
+
+    <img src="profile.jpg" class="profile">
+
     <p class="headline">
         Driven MBA student with a strong interest in marketing strategy, consumer behavior, and HR practices.
     </p>
@@ -154,7 +180,6 @@
         <h2>Professional Experience</h2>
 
         <div class="projects">
-
             <div class="card">
                 <h3>Malabar Gold & Diamonds</h3>
                 <p>Achieved sales targets and managed customer relationships effectively.</p>
@@ -162,14 +187,13 @@
 
             <div class="card">
                 <h3>Reliance Trends</h3>
-                <p>Handled inventory, stock management, and store operations.</p>
+                <p>Handled inventory and supported store operations.</p>
             </div>
 
             <div class="card">
                 <h3>Aditya Birla (Peter England)</h3>
-                <p>Worked on marketing and visual merchandising strategies.</p>
+                <p>Worked on visual merchandising and marketing activities.</p>
             </div>
-
         </div>
     </div>
 </section>
@@ -178,8 +202,8 @@
     <div class="container">
         <div class="card skills">
             <h2>Skills</h2>
-            <span>Marketing Strategy</span>
-            <span>HR Management</span>
+            <span>Marketing</span>
+            <span>HR</span>
             <span>Excel</span>
             <span>SPSS</span>
             <span>Power BI</span>
