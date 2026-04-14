@@ -10,8 +10,8 @@
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
-            background: linear-gradient(to right, #1f1c2c, #928dab);
-            color: #fff;
+            background: #0f172a;
+            color: #e2e8f0;
         }
 
         header {
@@ -20,47 +20,49 @@
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 40px;
             margin-bottom: 10px;
         }
 
         .tagline {
-            font-size: 18px;
-            opacity: 0.9;
+            color: #38bdf8;
+            font-weight: 500;
         }
 
         .headline {
             margin-top: 15px;
-            font-size: 15px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            color: #94a3b8;
         }
 
         .btn {
             margin-top: 20px;
             padding: 12px 25px;
-            background: #00c6ff;
-            color: white;
-            border-radius: 30px;
+            background: #38bdf8;
+            color: #0f172a;
+            border-radius: 25px;
             text-decoration: none;
             display: inline-block;
+            font-weight: bold;
         }
 
         nav {
             text-align: center;
-            margin: 20px 0;
+            border-top: 1px solid #1e293b;
+            border-bottom: 1px solid #1e293b;
+            padding: 15px;
         }
 
         nav a {
-            color: white;
-            margin: 10px;
+            color: #e2e8f0;
+            margin: 15px;
             text-decoration: none;
-            font-weight: 500;
         }
 
         section {
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
 
         .container {
@@ -69,11 +71,15 @@
         }
 
         .card {
-            background: rgba(255,255,255,0.1);
+            background: #1e293b;
             padding: 25px;
-            border-radius: 15px;
             margin: 20px 0;
-            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .projects {
@@ -84,29 +90,29 @@
 
         .skills span {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
+            background: #334155;
             padding: 8px 15px;
             margin: 5px;
             border-radius: 20px;
+            font-size: 14px;
         }
 
         .contact-icons img {
-            width: 45px;
+            width: 40px;
             margin: 10px;
+            filter: brightness(0.9);
+            transition: 0.3s;
+        }
+
+        .contact-icons img:hover {
+            transform: scale(1.2);
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            opacity: 0.7;
+            color: #94a3b8;
         }
-
-        img.profile {
-            width: 120px;
-            border-radius: 50%;
-            margin-top: 20px;
-        }
-
     </style>
 </head>
 
@@ -119,10 +125,6 @@
         Driven MBA student with a strong interest in marketing strategy, consumer behavior, and HR practices.
     </p>
 
-    <!-- Add your photo -->
-    <img src="profile.jpg" class="profile">
-
-    <br>
     <a href="resume.pdf" class="btn">Download Resume</a>
 </header>
 
@@ -138,7 +140,9 @@
         <div class="card">
             <h2>About Me</h2>
             <p>
-                MBA student specializing in Marketing and HR with experience in retail sales, customer relationship management, and business operations. Skilled in Excel, SPSS, Power BI, and digital marketing. Passionate about solving real-world business problems.
+                MBA student specializing in Marketing and HR with experience in retail sales,
+                customer relationship management, and business operations. Skilled in Excel,
+                SPSS, Power BI, and digital marketing.
             </p>
         </div>
     </div>
@@ -152,17 +156,17 @@
 
             <div class="card">
                 <h3>Malabar Gold & Diamonds</h3>
-                <p>Achieved sales targets, improved customer engagement, and handled sales operations.</p>
+                <p>Achieved sales targets and managed customer relationships effectively.</p>
             </div>
 
             <div class="card">
                 <h3>Reliance Trends</h3>
-                <p>Managed inventory, stock arrangement, and supported store operations.</p>
+                <p>Handled inventory, stock management, and store operations.</p>
             </div>
 
             <div class="card">
                 <h3>Aditya Birla (Peter England)</h3>
-                <p>Worked on visual merchandising and customer feedback analysis.</p>
+                <p>Worked on marketing and visual merchandising strategies.</p>
             </div>
 
         </div>
